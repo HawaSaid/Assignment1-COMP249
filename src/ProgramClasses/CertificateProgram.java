@@ -1,5 +1,5 @@
 package ProgramClasses;
 
-public class CertificateProgram {
+public class CertificateProgram extends Program{
 
 }

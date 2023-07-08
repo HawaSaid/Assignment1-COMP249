@@ -1,9 +1,9 @@
 package ProgramClasses;
 
-public class GraduateProgram {
+public class GraduateProgram extends Program{
 	
 	String coordinator; 
-	Static int creditCost();
+	Static int creditCost;
 	
 
 }
