@@ -1,4 +1,5 @@
 package ProgramClasses;
+import RemainingClasses.Course;
 
 public class Program {
 	String name;
@@ -8,6 +9,10 @@ public class Program {
 	Course[] requiredCourses;
 	
 	public Program() {
+		name=null;
+		specialization=null;
+		totalCredits=0;
+		institution=null;
 		
 	}
 	public Program() {
