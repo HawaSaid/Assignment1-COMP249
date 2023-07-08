@@ -5,5 +5,6 @@ public class Program {
 	String specialization;
 	int totalCredits;
 	String institution;
+	int idk;
 	
 }
