@@ -8,6 +8,7 @@ public class Program {
 	int totalCredits;
 	String institution;
 	Course[] requiredCourses;
+	Course[] electiveCourses;
 
 	public Program() {
 		name = null;
