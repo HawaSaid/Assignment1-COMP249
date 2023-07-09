@@ -1,5 +1,4 @@
 package ProgramClasses;
-
 import RemainingClasses.Course;
 
 public class Program {
