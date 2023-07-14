@@ -47,11 +47,15 @@ public class SpecialProgram extends Program {
 	public boolean equals(Program sp) { // Equals method
 		if (sp == null || getClass() != sp.getClass()) {
 			return false;
-		} else if (this == sp) {
-			return true;
+		} else {
+			SpecialProgram othersp = (SpecialProgram) sp;
+			if (this.duration == othersp.duration && SpecialProgram.creditCost == othersp.getCreditCost()) {
+				return true;
+			} else {
+				return false;
+			}
+
 		}
-		SpecialProgram othersp = (SpecialProgram) sp;
-		return this.duration == othersp.duration && SpecialProgram.creditCost == othersp.getCreditCost();
 
 	}
 
