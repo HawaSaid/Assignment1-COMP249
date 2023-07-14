@@ -18,17 +18,16 @@ public class NewDriver {
 		// Creates a new array of type Program
 		Program[] arrcopy = new Program[arrayBeforeCopy.length];
 		for (int j = 0; j < arrayBeforeCopy.length; j++) {
-
 			// Checks if the objects inside the array are instances of the ancestor class
 			// Program
 			if (arrcopy[j] instanceof Program) {
 				arrcopy[j] = new Program(arrayBeforeCopy[j]);
-			} else {
-				// Error message if an object in that array is not an instance of the Class
-				// Program
-				System.out.println("No Program object found in this array");
 			}
+			// Error message if an object in that array is not an instance of the Class
+			// Program
 		}
+		System.out.println("No Program object found in this array");
+
 		return arrcopy;
 
 	}
@@ -52,17 +51,8 @@ public class NewDriver {
 		ArrayBeforeCopy[12] = new GraduateProgram("Ella", 25);
 		ArrayBeforeCopy[13] = new Program("ComputerScience", " ", 90, "Concordia University", null, null);
 		ArrayBeforeCopy[14] = new Program("SoftwareEngineering", " ", 120, "Concordia University", null, null);
-		
-		
+
 		Program[] ArrayAfterCopy = copyTheObjects(ArrayBeforeCopy);
-		System.out.println("Array before copy");
-		for (Program program : ArrayBeforeCopy) {
-			System.out.println(ArrayBeforeCopy);
-		}
-		System.out.println("Array after copy");
-		for (Program program : ArrayAfterCopy) {
-			System.out.println(ArrayAfterCopy);
-		}
 	}
 
 }

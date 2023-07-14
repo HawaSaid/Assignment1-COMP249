@@ -44,7 +44,7 @@ public class Driver {
 					totalCreditCost[j] = -1;
 				else {
 					Program program = new Program((Program) o);
-					totalCreditCost[j] = ((Program) o).getTotalCredits() * ((GraduateProgram) o).getCreditCost();
+					totalCreditCost[j] = o.getTotalCredits() * o.getCreditCost();
 				}
 			}
 			if (foundprogram > 0) {
