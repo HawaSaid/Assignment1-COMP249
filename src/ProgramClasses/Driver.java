@@ -17,7 +17,7 @@ public class Driver {
 
 	public static void findLeastAndMostExpensiveProgram(Program[] arr) {// Custom method
 		if (arr!= null) {
-			int[] totalCreditCost = new [arr.length];
+			int[] totalCreditCost = new int [arr.length];
 			int least = 0;
 			int most = 0;
 			int foundprogram = 0;
@@ -27,27 +27,27 @@ public class Driver {
 				if ("class ProgramClasses.GraduateProgram".equals(arr[j].getClass().toString()))
 				{
 					o = new GraduateProgram((GraduateProgram)arr[j]);
-					foundprogram++
+					foundprogram++;
 				}
 				else if("class programClasses.UndergraduateProgram".equals(arr[j].getClass().toString()))
 				{
 					o = new UndergraduateProgram((UndergraduateProgram)arr[j]);
-					foundprogram++
+					foundprogram++;
 				}
 				else if ("class programClasses.SpecialProgram".equals(arr[j].getClass().toString()))
 				{
 					o = new SpecialProgram((SpecialProgram)arr[j]);
-					foundprogram++
+					foundprogram++;
 				}
 				else if ("class programClasses.CertificateProgram".equals(arr[j].getClass().toString()))
 				{
 					o = new CertificateProgram((CertificateProgram)arr[j]);
-					foundprogram++
+					foundprogram++;
 				}
 				else if ("class programClasses.Program".equals(arr[j].getClass().toString()))
 				{
 					o = new Program((Program)arr[j]);
-					foundprogram++
+					foundprogram++;
 				}
 				else 
 					o = new String("is not a program in university.");
@@ -75,7 +75,7 @@ public class Driver {
 				
 			}
 			else 
-				System.out.println("The array does not contain any program.")
+				System.out.println("The array does not contain any program.");
 		}
 		else 
 			System.out.println("Array is null.");
