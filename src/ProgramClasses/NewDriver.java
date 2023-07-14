@@ -1,9 +1,10 @@
 package ProgramClasses;
+import java.util.Scanner;
 
 //------------------------------------------------------------------------------
 //Assignment 1
 //Part: Part 2
-//Written by: Hawa-Afnane Said(ID:40263400)
+//Written by: Hawa-Afnane Said(ID:40263400)& Haifaa Janoudi(40263748)
 //------------------------------------------------------------------------------
 /**
  *
