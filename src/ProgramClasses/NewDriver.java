@@ -1,10 +1,10 @@
 package ProgramClasses;
 
+import ProgramClasses.Program;
 import RemainingClasses.GraduateProgram;
 import RemainingClasses.UndergraduateProgram;
 import RemainingClasses.CertificateProgram;
 import RemainingClasses.SpecialProgram;
-
 //------------------------------------------------------------------------------
 //Assignment 1
 //Part: Part 2
@@ -34,9 +34,9 @@ public class NewDriver {
 	}
 
 	public static void main(String[] args) {
-		
 		// Declaration of an array of type Program and a size
 		Program[] ArrayBeforeCopy = new Program[15];
+
 		ArrayBeforeCopy[0] = new GraduateProgram("Neil", 50);
 		ArrayBeforeCopy[1] = new GraduateProgram("Isabella", 30);
 		ArrayBeforeCopy[2] = new UndergraduateProgram(true, 50);
@@ -53,10 +53,9 @@ public class NewDriver {
 		ArrayBeforeCopy[13] = new Program("ComputerScience", " ", 90, "Concordia University", null, null);
 		ArrayBeforeCopy[14] = new Program("SoftwareEngineering", " ", 120, "Concordia University", null, null);
 		
-		//
+		
 		Program[] ArrayAfterCopy = copyTheObjects(ArrayBeforeCopy);
 		System.out.println("Array before copy");
-		//For each loop
 		for (Program program : ArrayBeforeCopy) {
 			System.out.println(ArrayBeforeCopy);
 		}
