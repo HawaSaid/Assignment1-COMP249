@@ -49,11 +49,15 @@ public class GraduateProgram extends Program {
 		if (gp == null || getClass() != gp.getClass()) {
 			return false;
 		} else {
-		GraduateProgram othergp = (GraduateProgram) gp;
-		if(this.coordinator.equalsIgnoreCase(othergp.coordinator)&& GraduateProgram.creditCost == othergp.getCreditCost()) {
-			return true;
+			GraduateProgram othergp = (GraduateProgram) gp;
+			if (this.coordinator.equalsIgnoreCase(othergp.coordinator)
+					&& GraduateProgram.creditCost == othergp.getCreditCost()) {
+				return true;
+			} else {
+				return false;
+			}
+
 		}
 
 	}
-
 }
