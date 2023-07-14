@@ -6,10 +6,6 @@ import java.util.Scanner;
 //Part: Part 2
 //Written by: Hawa-Afnane Said(ID:40263400)& Haifaa Janoudi(40263748)
 //------------------------------------------------------------------------------
-/**
- *
- * @author Hawa-Afnane Said
- */
 
 public class NewDriver {
 
