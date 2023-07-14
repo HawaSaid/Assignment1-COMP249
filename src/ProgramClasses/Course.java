@@ -1,4 +1,4 @@
-package RemainingClasses;
+package ProgramClasses;
 
 public class Course {
 	String name;

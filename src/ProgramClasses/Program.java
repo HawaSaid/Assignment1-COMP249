@@ -1,7 +1,5 @@
 package ProgramClasses;
 
-import RemainingClasses.Course;
-
 public class Program {
 	String name;
 	String specialization;
@@ -60,32 +58,32 @@ public class Program {
 		return this.totalCredits;
 	}
 
-	public void setrequiredCourses(Course[] requiredCourses) { // setter method for the array required courses
+	public void setrequiredCourses(Course[] requiredCourses) { // Setter method for the array required courses
 		this.requiredCourses = requiredCourses;
 
 	}
 
-	public Course[] getrequiredCourses() { // getter method for the required courses
+	public Course[] getrequiredCourses() { // Getter method for the required courses
 		return this.requiredCourses;
 	}
 
-	public void setelectiveCourses(Course[] electiveCourses) { // setter method for the array elective courses
+	public void setelectiveCourses(Course[] electiveCourses) { // Setter method for the array elective courses
 		this.electiveCourses = electiveCourses;
 	}
 
-	public Course[] getelectiveCourses() { // getter method for the array elective courses
+	public Course[] getelectiveCourses() { // Getter method for the array elective courses
 		return this.electiveCourses;
 	}
 
-	public void setinstituiton(String institution) { // setter method for the string institution
+	public void setinstituiton(String institution) { // Setter method for the string institution
 		this.institution = institution;
 	}
 
-	public String getinstitution() { // getter method for the string institution
+	public String getinstitution() { // Getter method for the string institution
 		return this.institution;
 	}
 
-	// overridden methods
+	//toString method
 	public String toString() {
 		return this.institution + "offer the program of " + this.name + "the following specializaition"
 				+ this.specialization + "that include the following courses: \n" + this.requiredCourses
@@ -93,6 +91,7 @@ public class Program {
 				+ " and the total amount of credits is " + this.totalCredits + "credits.";
 	}
 
+	//Equals method
 	public boolean equals(Program Program1) {
 		if (Program1 == null || this.getClass() != Program1.getClass())
 			return false;

@@ -6,17 +6,17 @@ public class CertificateProgram extends Program {
 	int capacity;
 	static int creditCost;
 
-	public CertificateProgram() {
+	public CertificateProgram() {//Default Constructor
 		capacity = 0;
 		creditCost = 0;
 	}
 
-	public CertificateProgram(int capacity, int creditCost) {
+	public CertificateProgram(int capacity, int creditCost) {//Custom Constructor
 		this.capacity = capacity;
 		CertificateProgram.creditCost = creditCost;
 	}
 
-	public CertificateProgram(CertificateProgram certificate) {
+	public CertificateProgram(CertificateProgram certificate) {//Copy Constructor
 		this.capacity = certificate.capacity;
 		CertificateProgram.creditCost = certificate.getCreditCost();
 	}
@@ -31,10 +31,6 @@ public class CertificateProgram extends Program {
 
 	public void setCreditCost(int creditCost) {// Setter method for the int creditCost
 		CertificateProgram.creditCost = creditCost;
-	}
-
-	public int getCreditCost() {// Getter method for the int creditCost
-		return creditCost;
 	}
 
 	@Override
