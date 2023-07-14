@@ -84,7 +84,7 @@ public class Program {
 		return this.institution + "offer the program of " + this.name "the the following specializaition" + this.specialization + "that include the following courses: \n" 
 				+ this.requiredCourses + " are the required courses \n "
 				+ this.electiveCourses + " are the elective courses \n"
-				+ " and the total amount of credits is " + this.totalCredits + "credits."
+				+ " and the total amount of credits is " + this.totalCredits + "credits.";
 	}
 	public boolean equals(Object Program1) {
 		if (Program1 == null || this.getClass()!= Program1.getClass())
