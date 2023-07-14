@@ -1,4 +1,5 @@
-package ProgramClasses;
+package RemainingClasses;
+import ProgramClasses.Program;
 
 public class UndergraduateProgram extends Program {
 	boolean accredited;

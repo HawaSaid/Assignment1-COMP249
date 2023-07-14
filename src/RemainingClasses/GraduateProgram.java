@@ -1,4 +1,5 @@
-package ProgramClasses;
+package RemainingClasses;
+import ProgramClasses.Program;;
 
 public class GraduateProgram extends Program {
 

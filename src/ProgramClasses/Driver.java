@@ -7,10 +7,10 @@ package ProgramClasses;
 //------------------------------------------------------------------------------
 
 import ProgramClasses.Program;
-import ProgramClasses.GraduateProgram;
-import ProgramClasses.UndergraduateProgram;
-import ProgramClasses.CertificateProgram;
-import ProgramClasses.SpecialProgram;
+import RemainingClasses.GraduateProgram;
+import RemainingClasses.UndergraduateProgram;
+import RemainingClasses.CertificateProgram;
+import RemainingClasses.SpecialProgram;
 import java.util.Scanner;
 
 public class Driver {
