@@ -59,64 +59,53 @@ public class Program {
 	public int getTotalCredits() { // Getter method for the integer totalCredits
 		return this.totalCredits;
 	}
-	public void setrequiredCourses(Course[] requiredCourses) { //setter method for the array required courses
+
+	public void setrequiredCourses(Course[] requiredCourses) { // setter method for the array required courses
 		this.requiredCourses = requiredCourses;
-		
+
 	}
-	public Course[] getrequiredCourses() { //getter method for the required courses
+
+	public Course[] getrequiredCourses() { // getter method for the required courses
 		return this.requiredCourses;
 	}
-	public void setelectiveCourses(Course[] electiveCourses) { //setter method for the array elective courses
+
+	public void setelectiveCourses(Course[] electiveCourses) { // setter method for the array elective courses
 		this.electiveCourses = electiveCourses;
 	}
-	public Course[] getelectiveCourses() { //getter method for the array elective courses
-		return this.electiveCourses; 
+
+	public Course[] getelectiveCourses() { // getter method for the array elective courses
+		return this.electiveCourses;
 	}
-	public void setinstituiton() { //setter method for the string institution 
+
+	public void setinstituiton(String institution) { // setter method for the string institution
 		this.institution = institution;
 	}
-	public String getinstitution() { //getter method for the string institution
+
+	public String getinstitution() { // getter method for the string institution
 		return this.institution;
 	}
-	
-	//overridden methods 
+
+	// overridden methods
 	public String toString() {
-		return this.institution + "offer the program of " + this.name "the the following specializaition" + this.specialization + "that include the following courses: \n" 
-				+ this.requiredCourses + " are the required courses \n "
-				+ this.electiveCourses + " are the elective courses \n"
+		return this.institution + "offer the program of " + this.name + "the following specializaition"
+				+ this.specialization + "that include the following courses: \n" + this.requiredCourses
+				+ " are the required courses \n " + this.electiveCourses + " are the elective courses \n"
 				+ " and the total amount of credits is " + this.totalCredits + "credits.";
 	}
+
 	public boolean equals(Program Program1) {
-		if (Program1 == null || this.getClass()!= Program1.getClass())
+		if (Program1 == null || this.getClass() != Program1.getClass())
 			return false;
-		else 
-		{
-			Program P = (Program)Program1;
-			if (this.name.equalsIgnoreCase(P.name) && this.specialization.equalsIgnoreCase(P.specialization) && this.electiveCourses.equals(P.electiveCourses) 
-				&& this.requiredCourses.equals(P.requiredCourses) && this.institution.equals(P.institution) && this.totalCredits == P.totalCredits)
+		else {
+			Program P = (Program) Program1;
+			if (this.name.equalsIgnoreCase(P.name) && this.specialization.equalsIgnoreCase(P.specialization)
+					&& this.electiveCourses.equals(P.electiveCourses) && this.requiredCourses.equals(P.requiredCourses)
+					&& this.institution.equals(P.institution) && this.totalCredits == P.totalCredits)
 				return true;
 			else
 				return false;
-			
+
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
