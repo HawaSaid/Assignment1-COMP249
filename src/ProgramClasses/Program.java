@@ -86,7 +86,20 @@ public class Program {
 				+ this.electiveCourses + " are the elective courses \n"
 				+ " and the total amount of credits is " + this.totalCredits + "credits."
 	}
-	
+	public boolean equals(Object Program1) {
+		if (Program1 == null || this.getClass()!= Program1.getClass())
+			return false;
+		else 
+		{
+			Program P = (Program)Program1;
+			if (this.name.equalsIgnoreCase(P.name) && this.specialization.equalsIgnoreCase(P.specialization) && this.electiveCourses.equalsIgnoreCase(P.electiveCourses) 
+				&& this.requiredCourses.equalsIgnoreCase(P.requiredCourses) && this.institution.equalsIgnoreCase(P.institution) && this.totalCredits == P.totalCredits)
+				return true;
+			else
+				return false;
+			
+		}
+	}
 	
 	
 	
