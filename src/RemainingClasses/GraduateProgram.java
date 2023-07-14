@@ -48,11 +48,11 @@ public class GraduateProgram extends Program {
 	public boolean equals(Program gp) { // Equals method
 		if (gp == null || getClass() != gp.getClass()) {
 			return false;
-		} else if (this == gp) {
+		} else {
+		GraduateProgram othergp = (GraduateProgram) gp;
+		if(this.coordinator.equalsIgnoreCase(othergp.coordinator)&& GraduateProgram.creditCost == othergp.getCreditCost()) {
 			return true;
 		}
-		GraduateProgram othergp = (GraduateProgram) gp;
-		return this.coordinator == othergp.coordinator && GraduateProgram.creditCost == othergp.getCreditCost();
 
 	}
 
