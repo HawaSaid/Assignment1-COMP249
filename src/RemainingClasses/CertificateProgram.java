@@ -46,13 +46,14 @@ public class CertificateProgram extends Program {
 	public boolean equals(Object cp) { // Equals method
 		if (cp == null || getClass() != cp.getClass()) {
 			return false;
-		} else if (this == cp) {
-			return true;
+		} else {
+			CertificateProgram othercp = (CertificateProgram) cp;
+			if (this.capacity == othercp.capacity && CertificateProgram.creditCost == othercp.getCreditCost()) {
+				return true;
+			} else {
+				return false;
+			}
 		}
-		CertificateProgram othercp = (CertificateProgram) cp;
-		return this.capacity == othercp.capacity && CertificateProgram.creditCost == othercp.getCreditCost();
-
 	}
-
-
 }
+
