@@ -6,7 +6,6 @@ package ProgramClasses;
 //Written by: Hawa-Afnane Said(ID:40263400)
 //------------------------------------------------------------------------------
 
-import ProgramClasses.Program;
 import RemainingClasses.GraduateProgram;
 import RemainingClasses.UndergraduateProgram;
 import RemainingClasses.CertificateProgram;
@@ -31,23 +30,25 @@ public class Driver {
 
 			for (int i = 0; i < arr.length; i++) {
 				Program pr = arr[i];
-				// if() {
+				if (pr.getClass()) {
 
-				// }
+					// }
+
+				}
 
 			}
 
-		}
+			if (leastExpensive != null && mostExpensive != null) {// Prints out the most and least expensive program
+																	// with
+																	// the toString method.
+				System.out.println("The most expensive program is");
+				System.out.println(mostExpensive.toString());
+				System.out.println("The least expensive program is");
+				System.out.println(leastExpensive.toString());
 
-		if (leastExpensive != null && mostExpensive != null) {// Prints out the most and least expensive program with
-																// the toString method.
-			System.out.println("The most expensive program is");
-			System.out.println(mostExpensive.toString());
-			System.out.println("The least expensive program is");
-			System.out.println(leastExpensive.toString());
-
-		} else { // Prints error message when the least and most expensive program are not found.
-			System.out.println("No Program object found in this array");
+			} else { // Prints error message when the least and most expensive program are not found.
+				System.out.println("No Program object found in this array");
+			}
 		}
 	}
 
