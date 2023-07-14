@@ -83,7 +83,7 @@ public class Program {
 		return this.institution;
 	}
 
-	//toString method
+	// toString method
 	public String toString() {
 		return this.institution + "offer the program of " + this.name + "the following specializaition"
 				+ this.specialization + "that include the following courses: \n" + this.requiredCourses
@@ -91,7 +91,7 @@ public class Program {
 				+ " and the total amount of credits is " + this.totalCredits + "credits.";
 	}
 
-	//Equals method
+	// Equals method
 	public boolean equals(Program Program1) {
 		if (Program1 == null || this.getClass() != Program1.getClass())
 			return false;
@@ -106,29 +106,5 @@ public class Program {
 
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

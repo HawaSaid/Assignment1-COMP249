@@ -16,9 +16,9 @@ public class SpecialProgram extends Program {
 		SpecialProgram.creditCost = creditCost;
 	}
 
-	public SpecialProgram(CertificateProgram certificate) {// Copy constructor
+	public SpecialProgram(SpecialProgram certificate) {// Copy constructor
 		super(certificate);
-		this.duration = certificate.capacity;
+		this.duration = certificate.duration;
 		SpecialProgram.creditCost = certificate.getCreditCost();
 	}
 
@@ -33,6 +33,9 @@ public class SpecialProgram extends Program {
 	public void setCreditCost(int creditCost) {// Setter method for the int creditCost
 		GraduateProgram.creditCost = creditCost;
 	}
+	public int getCreditCost() {// Getter method for the int creditCost
+		return creditCost;
+ 	}
 
 	@Override
 	public String toString() {// toString method
