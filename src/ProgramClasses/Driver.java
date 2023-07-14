@@ -30,7 +30,7 @@ public class Driver {
 
 			for (int i = 0; i < arr.length; i++) {
 				Program pr = arr[i];
-				if (pr.getClass()) {
+				//if (pr.getClass()) {
 
 					// }
 
@@ -50,7 +50,7 @@ public class Driver {
 				System.out.println("No Program object found in this array");
 			}
 		}
-	}
+	
 
 	public static void main(String[] args) {
 		// Declaration of two objects of each class from the ProgramClasses package

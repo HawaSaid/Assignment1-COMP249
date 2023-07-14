@@ -19,11 +19,13 @@ public class NewDriver {
 		Program[] arrcopy = new Program[arrayBeforeCopy.length];
 		for (int j = 0; j < arrayBeforeCopy.length; j++) {
 
-			// Checks if the objects inside the array are instances of the ancestor class Program
+			// Checks if the objects inside the array are instances of the ancestor class
+			// Program
 			if (arrcopy[j] instanceof Program) {
 				arrcopy[j] = new Program(arrayBeforeCopy[j]);
 			} else {
-				// Error message if an object in that array is not an instance of the Class Program
+				// Error message if an object in that array is not an instance of the Class
+				// Program
 				System.out.println("No Program object found in this array");
 			}
 		}
