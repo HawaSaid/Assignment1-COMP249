@@ -13,15 +13,16 @@ import RemainingClasses.SpecialProgram;
 
 public class NewDriver {
 
-	public static Program[] copyTheObjects(Program[] arrayBeforeCopy) {// Custom method that creates a copy of the array
+	public static Object[] copyTheObjects(Object[] arrayBeforeCopy) {// Custom method that creates a copy of the array
 																		// were passing through the method
 		// Creates a new array of type Program
-		Program[] arrcopy = new Program[arrayBeforeCopy.length];
+		Object[] arrcopy = new Program[arrayBeforeCopy.length];
 		for (int j = 0; j < arrayBeforeCopy.length; j++) {
 			// Checks if the objects inside the array are instances of the ancestor class
 			// Program
 			if (arrcopy[j] instanceof Program) {
-				arrcopy[j] = new Program(arrayBeforeCopy[j]);
+				arrcopy[j] = arrayBeforeCopy[j];
+				
 			}
 			// Error message if an object in that array is not an instance of the Class
 			// Program
@@ -34,7 +35,9 @@ public class NewDriver {
 
 	public static void main(String[] args) {
 		// Declaration of an array of type Program and a size
-		Program[] ArrayBeforeCopy = new Program[15];
+		Object[] ArrayBeforeCopy = new Object[15];
+		
+		
 		Scanner input=new Scanner(System.in);
 		
 		System.out.println("Please enter the name of a coordinator and the creditCost is: ");
@@ -74,7 +77,7 @@ public class NewDriver {
 		ArrayBeforeCopy[13] = new GraduateProgram("Ella", 25);
 		ArrayBeforeCopy[14] = new Program("ComputerScience", " ", 90, "Concordia University", null, null);
 
-		Program[] ArrayAfterCopy = copyTheObjects(ArrayBeforeCopy);
+		Object[] ArrayAfterCopy = copyTheObjects(ArrayBeforeCopy);
 	}
 
 }

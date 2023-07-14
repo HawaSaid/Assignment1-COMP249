@@ -72,35 +72,31 @@ public class Driver {
 	public static void main(String[] args) {
 		Scanner key = new Scanner(System.in);
 
-		GraduateProgram Obj1 = new GraduateProgram("Neil",25);
-		UndergraduateProgram Obj2 = new UndergraduateProgram(true,30);
-		SpecialProgram Obj3 = new SpecialProgram(90,40);
-		CertificateProgram Obj4 = new CertificateProgram(100,25);
-		//Program Obj5 = new Program();
-		//Course oj6=new Course();
+		GraduateProgram Obj1 = new GraduateProgram("Neil", 25);
+		UndergraduateProgram Obj2 = new UndergraduateProgram(true, 30);
+		SpecialProgram Obj3 = new SpecialProgram(90, 40);
+		CertificateProgram Obj4 = new CertificateProgram(100, 25);
+		// Program Obj5 = new Program();
+		// Course oj6=new Course();
 		System.out.println(Obj1);
 		System.out.println(Obj2);
 		System.out.println(Obj3);
 		System.out.println(Obj4);
 
-
-
-		//Obj5.toString();
-		Program[] arr=new Program[5];
+		// Obj5.toString();
+		Program[] arr = new Program[5];
 		arr[0] = new GraduateProgram("Neil", 25);
 		arr[1] = new UndergraduateProgram(true, 25);
 		arr[2] = new CertificateProgram(150, 35);
 		arr[3] = new SpecialProgram(60, 35);
 
-		Program[] arr2=new Program[5];
+		Program[] arr2 = new Program[5];
 		arr[0] = new GraduateProgram("Liam", 25);
 		arr[1] = new UndergraduateProgram(false, 25);
 		arr[2] = new CertificateProgram(300, 35);
 		arr[3] = new SpecialProgram(30, 35);
 
-		for(int i=0;i<arr.length;i++){
-		}
-
+		findLeastAndMostExpensiveProgram(arr2);
 
 	}
 
