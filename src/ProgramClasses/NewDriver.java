@@ -30,7 +30,11 @@ public class NewDriver {
 	}
 
 	public static void main(String[] args) {
+		//Declaration of an array of type Program and a size 
 		Program[] copy = new Program[15];
+		Scanner input=new Scanner(System.in);
+		System.out.println("Please enter ");
+		
 
 	}
 
