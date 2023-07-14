@@ -65,18 +65,6 @@ public class Driver {
 		SpecialProgram obj9 = new SpecialProgram();
 		SpecialProgram obj10 = new SpecialProgram();
 
-		// Takes an object of Scanner to read the keyboard's input.
-		Scanner input = new Scanner(System.in);
-
-		// Display's a prompt in the console window asking the user to necessary
-		// information for obj1.
-		System.out.println("Please enter the name,the specialization, the institution and the totalCredits for obj1:");
-		String name = input.next();
-		String specialization = input.next();
-		String institution = input.next();
-		int totalCredits = input.nextInt();
-
-		// obj1(name,specialization,institution,totalCredits);
 
 	}
 

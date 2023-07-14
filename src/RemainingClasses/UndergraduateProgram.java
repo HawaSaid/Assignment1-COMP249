@@ -37,6 +37,9 @@ public class UndergraduateProgram extends Program {
 	public int getCreditCost() {// Getter method for the int creditCost
 		return creditCost;
 	}
+	public double FindPrice() {// Method that returns the price of the UndergraduateProgram
+		return creditCost*getTotalCredits();
+	}
 
 	@Override
 	public String toString() {// toString method

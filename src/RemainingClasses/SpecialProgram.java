@@ -37,6 +37,9 @@ public class SpecialProgram extends Program {
 	public int getCreditCost() {// Getter method for the int creditCost
 		return creditCost;
 	}
+	public double FindPrice() {// Method that returns the price of the SpecialProgram
+		return creditCost*getTotalCredits();
+	}
 
 	@Override
 	public String toString() {// toString method
