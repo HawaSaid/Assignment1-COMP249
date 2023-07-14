@@ -1,5 +1,6 @@
 package ProgramClasses;
 
+import java.util.Scanner;
 import RemainingClasses.GraduateProgram;
 import RemainingClasses.UndergraduateProgram;
 import RemainingClasses.CertificateProgram;
@@ -34,23 +35,44 @@ public class NewDriver {
 	public static void main(String[] args) {
 		// Declaration of an array of type Program and a size
 		Program[] ArrayBeforeCopy = new Program[15];
+		Scanner input=new Scanner(System.in);
 		
-
-		ArrayBeforeCopy[0] = new GraduateProgram("Neil", 50);
-		ArrayBeforeCopy[1] = new GraduateProgram("Isabella", 30);
-		ArrayBeforeCopy[2] = new UndergraduateProgram(true, 50);
-		ArrayBeforeCopy[3] = new UndergraduateProgram(false, 20);
-		ArrayBeforeCopy[4] = new CertificateProgram(100, 25);
-		ArrayBeforeCopy[5] = new CertificateProgram(200, 25);
-		ArrayBeforeCopy[6] = new CertificateProgram(150, 35);
-		ArrayBeforeCopy[7] = new SpecialProgram(60, 35);
-		ArrayBeforeCopy[8] = new SpecialProgram(75, 55);
-		ArrayBeforeCopy[9] = new SpecialProgram(90, 55);
-		ArrayBeforeCopy[10] = new SpecialProgram(100, 65);
-		ArrayBeforeCopy[11] = new CertificateProgram(300, 25);
-		ArrayBeforeCopy[12] = new GraduateProgram("Ella", 25);
-		ArrayBeforeCopy[13] = new Program("ComputerScience", " ", 90, "Concordia University", null, null);
-		ArrayBeforeCopy[14] = new Program("SoftwareEngineering", " ", 120, "Concordia University", null, null);
+		System.out.println("Please enter the name of a coordinator and the creditCost is: ");
+		String coordinator=input.next();
+		int CreditCost=input.nextInt();
+		ArrayBeforeCopy[0] = new GraduateProgram(coordinator, CreditCost);
+		
+		System.out.println("Please enter the name of another coordinator and the creditCost is: ");
+		String coordinator1=input.next();
+		int CreditCost1=input.nextInt();
+		ArrayBeforeCopy[1] = new GraduateProgram(coordinator1,CreditCost1);
+		
+		System.out.println("Is it accredited and the creditCost is: ");
+		boolean accredited=input.nextBoolean();
+		int CreditCost2=input.nextInt();
+		ArrayBeforeCopy[2] = new UndergraduateProgram(accredited, CreditCost2);
+		
+		System.out.println("Is it accredited and the creditCost is: ");
+		boolean accredited1=input.nextBoolean();
+		int CreditCost3=input.nextInt();
+		ArrayBeforeCopy[3] = new UndergraduateProgram(accredited1, CreditCost3);
+		
+		System.out.println("The capacity and the creditCost are: ");
+		boolean capacity=input.nextBoolean();
+		int CreditCost4=input.nextInt();
+		ArrayBeforeCopy[4] = new UndergraduateProgram(accredited1, CreditCost4);
+		
+		
+		ArrayBeforeCopy[5] = new CertificateProgram(100, 25);
+		ArrayBeforeCopy[6] = new CertificateProgram(200, 25);
+		ArrayBeforeCopy[7] = new CertificateProgram(150, 35);
+		ArrayBeforeCopy[8] = new SpecialProgram(60, 35);
+		ArrayBeforeCopy[9] = new SpecialProgram(75, 55);
+		ArrayBeforeCopy[10] = new SpecialProgram(90, 55);
+		ArrayBeforeCopy[11] = new SpecialProgram(100, 65);
+		ArrayBeforeCopy[12] = new CertificateProgram(300, 25);
+		ArrayBeforeCopy[13] = new GraduateProgram("Ella", 25);
+		ArrayBeforeCopy[14] = new Program("ComputerScience", " ", 90, "Concordia University", null, null);
 
 		Program[] ArrayAfterCopy = copyTheObjects(ArrayBeforeCopy);
 	}

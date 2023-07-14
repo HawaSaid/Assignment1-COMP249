@@ -11,6 +11,7 @@ import RemainingClasses.GraduateProgram;
 import RemainingClasses.UndergraduateProgram;
 import RemainingClasses.CertificateProgram;
 import RemainingClasses.SpecialProgram;
+import ProgramClasses.Course;
 import java.util.Scanner;
 
 public class Driver {
@@ -44,7 +45,7 @@ public class Driver {
 					totalCreditCost[j] = -1;
 				else {
 					Program program = new Program((Program) o);
-					totalCreditCost[j] = o.getTotalCredits() * o.getCreditCost();
+					totalCreditCost[j] = ((Program) o).getTotalCredits() * ((GraduateProgram) o).getCreditCost();
 				}
 			}
 			if (foundprogram > 0) {
@@ -69,36 +70,30 @@ public class Driver {
 	}
 
 	public static void main(String[] args) {
-Scanner key = new Scanner(System.in);
-		
-		GraduateProgram Obj1 = new GraduateProgram();
-		UndergraduateProgram Obj2 = new UndergraduateProgram();
-		SpecialProgram Obj3 = new SpecialProgram();
-		CertificateProgram Obj4 = new CertificateProgram();
-		Program Obj5 = new Program();
-		
+		Scanner key = new Scanner(System.in);
+
+		GraduateProgram Obj1 = new GraduateProgram("Neil",25);
+		UndergraduateProgram Obj2 = new UndergraduateProgram(true,30);
+		SpecialProgram Obj3 = new SpecialProgram(90,40);
+		CertificateProgram Obj4 = new CertificateProgram(100,25);
+		//Program Obj5 = new Program();
+		//Course oj6=new Course();
+
 		Obj1.toString();
 		Obj2.toString();
 		Obj3.toString();
 		Obj4.toString();
-		Obj5.toString();
-		
-		System.out.println("Please enter a program name: ");
-		String prog1 = key.nextLine();
-		
+		//Obj5.toString();
+		Program[] arr=new Program[5];
+		arr[0] = new CertificateProgram(100, 25);
+		arr[1] = new CertificateProgram(200, 25);
+		arr[2] = new CertificateProgram(150, 35);
+		arr[3] = new SpecialProgram(60, 35);
+		arr[4] = new SpecialProgram(75, 55);
 		
 		
 		
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
