@@ -92,7 +92,7 @@ public class Program {
 		else 
 		{
 			Program P = (Program)Program1;
-			if (this.name.equalsIgnoreCase(P.name) && this.specialization.equalsIgnoreCase(P.specialization) && this.electiveCourses.equalsIgnoreCase(P.electiveCourses) 
+			if (this.name.equalsIgnoreCase(P.name) && this.specialization.equalsIgnoreCase(P.specialization) && this.electiveCourses.equals(P.electiveCourses) 
 				&& this.requiredCourses.equals(P.requiredCourses) && this.institution.equals(P.institution) && this.totalCredits == P.totalCredits)
 				return true;
 			else
