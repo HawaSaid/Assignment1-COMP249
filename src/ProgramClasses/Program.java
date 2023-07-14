@@ -81,10 +81,10 @@ public class Program {
 	
 	//overridden methods 
 	public String toString() {
-		return this.institution + "offer the program of " + this.name "the the following specializaition" + this.specialization + "that include the following courses: \n" 
+		return this.institution + "offer the program of " + this.name +"the following specializaition" + this.specialization + "that include the following courses: \n" 
 				+ this.requiredCourses + " are the required courses \n "
 				+ this.electiveCourses + " are the elective courses \n"
-				+ " and the total amount of credits is " + this.totalCredits + "credits."
+				+ " and the total amount of credits is " + this.totalCredits + "credits.";
 	}
 	
 	

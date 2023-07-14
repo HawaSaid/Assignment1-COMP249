@@ -13,14 +13,15 @@ package ProgramClasses;
 public class NewDriver {
 
 	public static Program[] copyTheObjects(Program[] array) {// Custom method that creates a copy of the array were
-																// passing
-		// through the method
+																// passing through the method
+		//Creates a new array of type Program
 		Program[] arrcopy = new Program[array.length];
 		for (int j = 0; j < array.length; j++) {
+			//Checks if the element
 			if (arrcopy[j] instanceof Program) {
 				arrcopy[j] = new Program(array[j]);
 			} else {
-				System.out.println("Can't find a Program object");
+				System.out.println("No Program object found in this array");
 			}
 		}
 		return arrcopy;
@@ -28,6 +29,8 @@ public class NewDriver {
 	}
 
 	public static void main(String[] args) {
+		Program[] copy=new Program[15];
+		
 
 	}
 
