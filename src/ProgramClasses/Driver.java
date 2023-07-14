@@ -47,7 +47,7 @@ public class Driver {
 			System.out.println(leastExpensive.toString());
 
 		} else { // Prints error message when the least and most expensive program are not found.
-			System.out.println("Can't find a Program object :(");
+			System.out.println("No Program object found in this array");
 		}
 	}
 
