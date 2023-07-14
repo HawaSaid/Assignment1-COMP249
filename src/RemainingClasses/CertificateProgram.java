@@ -1,5 +1,7 @@
 package RemainingClasses;
 
+import ProgramClasses.Program;
+
 public class CertificateProgram extends Program {
 	int capacity;
 	static int creditCost;
@@ -28,7 +30,7 @@ public class CertificateProgram extends Program {
 	}
 
 	public void setCreditCost(int creditCost) {// Setter method for the int creditCost
-		GraduateProgram.creditCost = creditCost;
+		CertificateProgram.creditCost = creditCost;
 	}
 
 	public int getCreditCost() {// Getter method for the int creditCost
