@@ -86,7 +86,7 @@ public class Program {
 				+ this.electiveCourses + " are the elective courses \n"
 				+ " and the total amount of credits is " + this.totalCredits + "credits.";
 	}
-	public boolean equals(Object Program1) {
+	public boolean equals(Program Program1) {
 		if (Program1 == null || this.getClass()!= Program1.getClass())
 			return false;
 		else 
