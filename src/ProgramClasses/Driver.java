@@ -69,7 +69,36 @@ public class Driver {
 	}
 
 	public static void main(String[] args) {
+Scanner key = new Scanner(System.in);
+		
+		GraduateProgram Obj1 = new GraduateProgram();
+		UndergraduateProgram Obj2 = new UndergraduateProgram();
+		SpecialProgram Obj3 = new SpecialProgram();
+		CertificateProgram Obj4 = new CertificateProgram();
+		Program Obj5 = new Program();
+		
+		Obj1.toString();
+		Obj2.toString();
+		Obj3.toString();
+		Obj4.toString();
+		Obj5.toString();
+		
+		System.out.println("Please enter a program name: ");
+		String prog1 = key.nextLine();
+		
+		
+		
+		
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
