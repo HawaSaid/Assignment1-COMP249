@@ -1,6 +1,5 @@
 package ProgramClasses;
 
-import ProgramClasses.Program;
 import RemainingClasses.GraduateProgram;
 import RemainingClasses.UndergraduateProgram;
 import RemainingClasses.CertificateProgram;
@@ -35,6 +34,7 @@ public class NewDriver {
 	public static void main(String[] args) {
 		// Declaration of an array of type Program and a size
 		Program[] ArrayBeforeCopy = new Program[15];
+		
 
 		ArrayBeforeCopy[0] = new GraduateProgram("Neil", 50);
 		ArrayBeforeCopy[1] = new GraduateProgram("Isabella", 30);
