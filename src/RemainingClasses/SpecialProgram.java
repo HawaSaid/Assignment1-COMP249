@@ -41,7 +41,7 @@ public class SpecialProgram extends Program {
 	@Override
 	public String toString() {// toString method
 		return "In the SpecialProgram,the duration is " + duration + "years" + " and the creditCost is " + creditCost
-				+ "$.";
+				+ " $.";
 	}
 
 	@Override

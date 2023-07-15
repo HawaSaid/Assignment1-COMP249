@@ -1,6 +1,5 @@
 package ProgramClasses;
 
-import java.util.Scanner;
 import RemainingClasses.GraduateProgram;
 import RemainingClasses.UndergraduateProgram;
 import RemainingClasses.CertificateProgram;

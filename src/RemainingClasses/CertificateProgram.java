@@ -38,7 +38,7 @@ public class CertificateProgram extends Program {
 	
 	@Override
 	public String toString() {// toString method
-		return "In the CertificateProgram, the capacity is " + capacity + " and the creditCost is " + creditCost;
+		return "In the CertificateProgram, the capacity is " + capacity + " and the creditCost is " + creditCost+" $.";
 	}
 
 	@Override

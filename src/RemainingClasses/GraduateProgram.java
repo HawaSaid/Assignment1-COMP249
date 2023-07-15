@@ -41,7 +41,7 @@ public class GraduateProgram extends Program {
 	@Override
 	public String toString() { // ToString method
 		return "In the Graduate Program,the name of the coordinator is " + coordinator + " and the credit cost is "
-				+ creditCost + "$.";
+				+ creditCost + " $.";
 	}
 
 	@Override
