@@ -1,4 +1,9 @@
 package ProgramClasses;
+//------------------------------------------------------------------------------
+//Assignment 1
+//Part: Part 1 and 2
+//Written by: Hawa-Afnane Said(ID:40263400)& Haifaa Janoudi(40263748)
+//------------------------------------------------------------------------------
 
 public class Program {
 	String name;
