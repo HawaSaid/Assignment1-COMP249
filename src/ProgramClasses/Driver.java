@@ -57,8 +57,8 @@ public class Driver {
 							most = j;
 					}
 				}
-				System.out.println("The most expensive program is " + arr[most].toString()
-						+ "and the least expensive program is" + arr[least].toString());
+				System.out.println("The most expensive program: " + arr[most].toString());
+				System.out.println("The least expensive program: " + arr[least].toString());
 
 			} else
 				System.out.println("The array does not contain any program.");
