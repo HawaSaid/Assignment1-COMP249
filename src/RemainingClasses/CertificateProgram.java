@@ -35,10 +35,12 @@ public class CertificateProgram extends Program {
 	public int getCreditCost() {// Getter method for the int creditCost
 		return creditCost;
 	}
-
+	public int getPrice() {
+		return creditCost*getTotalCredits();
+	}
 	@Override
 	public String toString() {// toString method
-		return "The capacity is " + capacity + " and the creditCost is" + creditCost;
+		return "The capacity is " + capacity + " and the creditCost is " + creditCost;
 	}
 
 	@Override

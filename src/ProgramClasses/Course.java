@@ -36,7 +36,7 @@ public class Course {
 	}
 
 	public String toString() {// toString method
-		return "The name of the course is " + name + " and the amount of credit for that course is" + credits;
+		return "The name of the course is " + name + " and the amount of credit for that course is " + credits;
 	}
 
 	public boolean equals(Course c) {// Equals method

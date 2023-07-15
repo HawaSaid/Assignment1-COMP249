@@ -36,10 +36,12 @@ public class SpecialProgram extends Program {
 	public int getCreditCost() {// Getter method for the int creditCost
 		return creditCost;
  	}
-
+	public int getPrice() {
+		return creditCost*getTotalCredits();
+	}
 	@Override
 	public String toString() {// toString method
-		return "The duration is for the SpecialProgram " + duration + " and the creditCost is" + creditCost;
+		return "The duration is for the SpecialProgram " + duration + " and the creditCost is " + creditCost;
 	}
 
 	@Override

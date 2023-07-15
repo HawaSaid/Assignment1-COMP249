@@ -23,29 +23,27 @@ public class Driver {
 			int most = 0;
 			int foundprogram = 0;
 			for (int j = 0; j < arr.length; j++) {
-				Object o;
-				if ("class ProgramClasses.GraduateProgram".equals(arr[j].getClass().toString())) {
-					o = new GraduateProgram((GraduateProgram) arr[j]);
+				if (arr[j] != null && "class RemainingClasses.GraduateProgram".equals(arr[j].getClass().toString())) {
+					GraduateProgram p = new GraduateProgram((GraduateProgram) arr[j]);
+					totalCreditCost[j] = p.getCreditCost();
 					foundprogram++;
-				} else if ("class programClasses.UndergraduateProgram".equals(arr[j].getClass().toString())) {
-					o = new UndergraduateProgram((UndergraduateProgram) arr[j]);
+				} else if (arr[j] != null
+						&& "class RemainingClasses.UndergraduateProgram".equals(arr[j].getClass().toString())) {
+					UndergraduateProgram p = new UndergraduateProgram((UndergraduateProgram) arr[j]);
+					totalCreditCost[j] = p.getCreditCost();
 					foundprogram++;
-				} else if ("class programClasses.SpecialProgram".equals(arr[j].getClass().toString())) {
-					o = new SpecialProgram((SpecialProgram) arr[j]);
+				} else if (arr[j] != null
+						&& "class RemainingClasses.SpecialProgram".equals(arr[j].getClass().toString())) {
+					SpecialProgram p = new SpecialProgram((SpecialProgram) arr[j]);
+					totalCreditCost[j] = p.getCreditCost();
 					foundprogram++;
-				} else if ("class programClasses.CertificateProgram".equals(arr[j].getClass().toString())) {
-					o = new CertificateProgram((CertificateProgram) arr[j]);
+				} else if (arr[j] != null
+						&& "class RemainingClasses.CertificateProgram".equals(arr[j].getClass().toString())) {
+					CertificateProgram p = new CertificateProgram((CertificateProgram) arr[j]);
+					totalCreditCost[j] = p.getCreditCost();
 					foundprogram++;
-				} else if ("class programClasses.Program".equals(arr[j].getClass().toString())) {
-					o = new Program((Program) arr[j]);
-					foundprogram++;
-				} else
-					o = new String("is not a program in university.");
-				if ("is not a program in university".equals(o))
+				} else {
 					totalCreditCost[j] = -1;
-				else {
-					Program program = new Program((Program) o);
-					totalCreditCost[j] = ((Program) o).getTotalCredits() * ((GraduateProgram) o).getCreditCost();
 				}
 			}
 			if (foundprogram > 0) {
@@ -66,7 +64,6 @@ public class Driver {
 				System.out.println("The array does not contain any program.");
 		} else
 			System.out.println("Array is null.");
-
 	}
 
 	public static void main(String[] args) {
@@ -84,19 +81,19 @@ public class Driver {
 		System.out.println(Obj4);
 
 		// Obj5.toString();
-		Program[] arr = new Program[5];
+		Program[] arr = new Program[4];
 		arr[0] = new GraduateProgram("Neil", 25);
 		arr[1] = new UndergraduateProgram(true, 25);
 		arr[2] = new CertificateProgram(150, 35);
 		arr[3] = new SpecialProgram(60, 35);
 
-		Program[] arr2 = new Program[5];
-		arr[0] = new GraduateProgram("Liam", 25);
-		arr[1] = new UndergraduateProgram(false, 25);
-		arr[2] = new CertificateProgram(300, 35);
-		arr[3] = new SpecialProgram(30, 35);
+		Program[] arr2 = new Program[4];
+		arr2[0] = new GraduateProgram("Liam", 25);
+		arr2[1] = new UndergraduateProgram(false, 25);
+		arr2[2] = new CertificateProgram(300, 35);
+		arr2[3] = new SpecialProgram(30, 35);
 
-		findLeastAndMostExpensiveProgram(arr2);
+		findLeastAndMostExpensiveProgram(arr);
 
 	}
 

@@ -82,12 +82,11 @@ public class Program {
 	public String getinstitution() { // Getter method for the string institution
 		return this.institution;
 	}
-
 	// toString method
 	public String toString() {
-		return this.institution + "offer the program of " + this.name + "the following specializaition"
-				+ this.specialization + "that include the following courses: \n" + this.requiredCourses
-				+ " are the required courses \n " + this.electiveCourses + " are the elective courses \n"
+		return this.institution + " offers the program of " + this.name + " and the following specializaition "
+				+ this.specialization + " that includes the following courses: \n" + this.requiredCourses
+				+ " are the required courses \n " + this.electiveCourses + " are the elective courses \n "
 				+ " and the total amount of credits is " + this.totalCredits + "credits.";
 	}
 

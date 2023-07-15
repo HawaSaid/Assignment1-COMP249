@@ -37,7 +37,10 @@ public class GraduateProgram extends Program {
 	public int getCreditCost() {// Getter method for the int creditCost
 		return creditCost;
 	}
-
+	public int getPrice() {
+		return creditCost*getTotalCredits();
+	}
+	
 	@Override
 	public String toString() { // ToString method
 		return "The name of the coordinator for the GraduateProgram is " + coordinator + " and the credit cost is "
