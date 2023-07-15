@@ -149,33 +149,54 @@ public class Driver {
 		cert1.setTotalCredits(40);
 
 		CertificateProgram cert2 = new CertificateProgram();
-		cert2.setName("English");
-		cert2.setSpecialization("English Writing and Communication");
+		cert2.setName("Engineering");
+		cert2.setSpecialization("Mechanical Egineering");
 		cert2.setCapacity(20);
-		cert2.setrequiredCourses(ENCS);
+		cert2.setrequiredCourses(ENGR);
 		cert2.setelectiveCourses(ELEC);
 		cert2.setinstituiton("Concordia University");
-		cert2.setTotalCredits(25);
+		cert2.setTotalCredits(40);
+		
 
-		// Comparing programs to see most and least expensive
-		Underp1.equals(cert2);
-		Underp1.equals(cert1);
-		cert2.equals(spec2);
-		cert1.equals(grad1);
-		grad1.equals(grad2);
-
-		// Array containing at least one object of each class
-		Object[] arr1 = { Underp1, grad1, cert1, spec1 };
-
-		// Array that includes the objects of only the class course. Because it is the
-		// only one that does
-		// not extend program class.
-		Object[] arr2 = { COMP, ELEC, ENGR, EDUC, PHYS, BIZN, SPAN, THEO, ENCS };
-
-		// asking the program to find least and most expensive programs
+		//Comparing programs to see most and least expensive 
+		Underp1.equals(cert2); //comparing objects with different classes and similar values
+		
+		cert1.equals(grad1); //comparing objects in different classes with different values
+		grad1.equals(grad2); //comparing objects with same class
+		
+		//Array containing at least one object of each class
+		Object[] arr1 = {Underp1, Underp2, grad2, grad1, cert1, cert2, spec2};
+		
+		//Array that includes the objects of only the class course. Because it is the only one that does 
+		//not extend program class.
+		Object[] arr2 = {COMP, ELEC, ENGR, EDUC, PHYS, BIZN, SPAN, THEO, ENCS};
+		
+		//asking the program to find least and most expensive programs
 		findLeastAndMostExpensiveProgram(arr1);
 		findLeastAndMostExpensiveProgram(arr2);
+		
+		if (Underp1.equals(cert2)) {
+		System.out.println("Programs are similar.");
+		}
+		else {
+			System.out.println("Programs are in different classes with similar courses and credits.");
+		}
+		if (cert1.equals(grad1)) {
+				System.out.println("Programs are similar.");
+		}
+		else {
+				System.out.println("Programs are in different classes with different courses.");
 
-	}
+		}	
+		if (grad1.equals(grad2)) {
+			System.out.println("Programs are in same class.");
+		}
+		else {
+				System.out.println("Programs are in same class with different courses and credits.");
+		}
+			
+
+
+}
 
 }
