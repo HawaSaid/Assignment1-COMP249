@@ -43,7 +43,7 @@ public class UndergraduateProgram extends Program {
 
 	@Override
 	public String toString() {// toString method
-		return "Is the course accredited: /n" + accredited + " and the creditCost is " + creditCost+"$.";
+		return "Is the course accredited: " + accredited + " and the creditCost is " + creditCost+"$.";
 	}
 
 	@Override
