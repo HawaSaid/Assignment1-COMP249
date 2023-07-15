@@ -37,11 +37,11 @@ public class GraduateProgram extends Program {
 	public int getCreditCost() {// Getter method for the int creditCost
 		return creditCost;
 	}
-	
+
 	@Override
 	public String toString() { // ToString method
-		return "The name of the coordinator for the GraduateProgram is " + coordinator + " and the credit cost is "
-				+ creditCost+"$.";
+		return "In the Graduate Program,the name of the coordinator is " + coordinator + " and the credit cost is "
+				+ creditCost + "$.";
 	}
 
 	@Override

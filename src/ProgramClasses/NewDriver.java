@@ -55,8 +55,8 @@ public class NewDriver {
 		ArrayBeforeCopy[6] = new CertificateProgram(100, 25);
 		ArrayBeforeCopy[7] = new CertificateProgram(200, 25);
 		ArrayBeforeCopy[8] = new CertificateProgram(150, 35);
-		ArrayBeforeCopy[9] = new SpecialProgram(60, 35);
-		ArrayBeforeCopy[10] = new SpecialProgram(75, 55);
+		ArrayBeforeCopy[9] = new SpecialProgram(4, 35);
+		ArrayBeforeCopy[10] = new SpecialProgram(3, 55);
 		ArrayBeforeCopy[11] = new Course("COMP248", 50);
 		ArrayBeforeCopy[12] = new Course("COMP249", 50);
 		ArrayBeforeCopy[13] = new Program("ComputerScience", " ", 90, "Concordia University", ENGR,ELEC );

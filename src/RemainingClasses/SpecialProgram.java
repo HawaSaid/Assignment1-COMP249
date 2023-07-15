@@ -33,13 +33,15 @@ public class SpecialProgram extends Program {
 	public void setCreditCost(int creditCost) {// Setter method for the int creditCost
 		GraduateProgram.creditCost = creditCost;
 	}
+
 	public int getCreditCost() {// Getter method for the int creditCost
 		return creditCost;
- 	}
+	}
 
 	@Override
 	public String toString() {// toString method
-		return "The duration for the SpecialProgram is " + duration +"min"+ " and the creditCost is " + creditCost+"$.";
+		return "In the SpecialProgram,the duration is " + duration + "years" + " and the creditCost is " + creditCost
+				+ "$.";
 	}
 
 	@Override
