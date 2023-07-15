@@ -37,6 +37,13 @@ public class NewDriver {
 	public static void main(String[] args) {
 		// Declaration of an array of type Program and a size
 		Object[] ArrayBeforeCopy = new Object[15];
+		
+		//Arrays of Courses
+		Course[] ENGR = { new Course("ENGR 213", 3), new Course("ENGR 233", 3) };
+		Course[] COMP = { new Course("COMP 232", 3), new Course("COMP 248", 3) };
+		Course[] ELEC = { new Course("ELEC 201", 3), new Course("ELEC 202", 3) };
+		Course[] EDUC = { new Course("EDUC 201", 3), new Course("EDUC 202", 3) };
+		Course[] PHYS = { new Course("PHYS 101", 3), new Course("PHYS 102", 3) };
 
 		// Initialization of each array cell
 		ArrayBeforeCopy[0] = new GraduateProgram("Neil", 50);
@@ -52,8 +59,8 @@ public class NewDriver {
 		ArrayBeforeCopy[10] = new SpecialProgram(75, 55);
 		ArrayBeforeCopy[11] = new Course("COMP248", 50);
 		ArrayBeforeCopy[12] = new Course("COMP249", 50);
-		ArrayBeforeCopy[13] = new Program("ComputerScience", " ", 90, "Concordia University", null, null);
-		ArrayBeforeCopy[14] = new Program("SoftwareEngineering", " ", 120, "Concordia University", null, null);
+		ArrayBeforeCopy[13] = new Program("ComputerScience", " ", 90, "Concordia University", ENGR,ELEC );
+		ArrayBeforeCopy[14] = new Program("SoftwareEngineering", " ", 120, "Concordia University", COMP, ELEC);
 
 		// Copies the objects in the ArrayBeforeCopy array in the ArrayAfterCopy array
 		Object[] ArrayAfterCopy = copyTheObjects(ArrayBeforeCopy);
