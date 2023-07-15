@@ -18,26 +18,25 @@ public class NewDriver {
 		// Creates a new array of type Program
 		Object[] arrcopy = new Object[arrayBeforeCopy.length];
 		for (int j = 0; j < arrayBeforeCopy.length; j++) {
-			// Checks if the objects inside the array are instances of the ancestor class
-			// Program
+			
+			// Checks if the objects inside the array are instances of the ancestor class Program
 			if (arrcopy[j] instanceof Program) {
-				arrcopy[j] = new Program((Program)arrayBeforeCopy[j]);
-
+				arrcopy[j] = new Program((Program) arrayBeforeCopy[j]);
+				System.out.println();
+				System.out.println();
 			}
-			// Error message if an object in that array is not an instance of the Class
-			// Program
 		}
+		// Error message if an object in that array is not an instance of the Class Program
 		System.out.println("No Program object found in the array.");
 
 		return arrcopy;
-
 	}
 
 	public static void main(String[] args) {
 		// Declaration of an array of type Program and a size
 		Object[] ArrayBeforeCopy = new Object[15];
 
-		//Initialization of each array cell
+		// Initialization of each array cell
 		ArrayBeforeCopy[0] = new GraduateProgram("Neil", 50);
 		ArrayBeforeCopy[1] = new GraduateProgram("Isabella", 30);
 		ArrayBeforeCopy[2] = new GraduateProgram("Ella", 25);
@@ -50,10 +49,11 @@ public class NewDriver {
 		ArrayBeforeCopy[9] = new SpecialProgram(60, 35);
 		ArrayBeforeCopy[10] = new SpecialProgram(75, 55);
 		ArrayBeforeCopy[11] = new Course("COMP248", 50);
-		ArrayBeforeCopy[12] = new Course("COMP249",50);
+		ArrayBeforeCopy[12] = new Course("COMP249", 50);
 		ArrayBeforeCopy[13] = new Program("ComputerScience", " ", 90, "Concordia University", null, null);
 		ArrayBeforeCopy[14] = new Program("SoftwareEngineering", " ", 120, "Concordia University", null, null);
 
+		//Copies the objects in the ArrayBeforeCopy array in the ArrayAfterCopy array
 		Object[] ArrayAfterCopy = copyTheObjects(ArrayBeforeCopy);
 	}
 
