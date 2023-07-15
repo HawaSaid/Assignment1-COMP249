@@ -79,6 +79,9 @@ public class Driver {
 		System.out.println(Obj2);
 		System.out.println(Obj3);
 		System.out.println(Obj4);
+		Obj1.equals(Obj2);
+		Obj1.equals(Obj3);
+		Obj2.equals(Obj4);
 
 		// Obj5.toString();
 		Program[] arr = new Program[4];
